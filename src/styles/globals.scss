@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background-color: #f4f4f4;
+
+}
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #3b3b3b;
+    font-size: 16px;
+    height: inherit;
+    line-height: inherit;
+    line-height: 2;
+     
+}
+
+
+a {
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #3b3b3b;
+    font-size: 12px;
+    height: inherit;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #3b3b3b;
+    font-size: 12px;
+    height: inherit;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.wrapper {
+    //display: flex;
+    width: 100%;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+ 
+ 
+$color: skyblue;
+$lineColor: hotpink;
+$fontColor: #bbb;
+$yearBgColor: #333;
+
+$breakpoint: 700px;
+
+.timelineContainer {
+    background-color: white;
+    padding: 70px 0 70px 0 ;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+     
+}
+.timeline {
+  position: relative;
+  padding: 40px 15px 40px 40px;
+  margin: 0 auto;
+  border-top: 1px solid rgba(160, 160, 160, 0.3);
+  border-bottom: 1px solid rgba(160, 160, 160, 0.3);
+   
+    &Title {
+        font-size: 1.5em;
+        font-weight: 900;
+        margin: 0;
+        white-space: wrap;
+    }
+  
+  &:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+    background-size: contain;
+    border-right: solid 0.5px rgba(160, 160, 160, 0.3);
+    //left: 10%;
+    @media screen and (min-width: 768px) {
+      right: 160px;
+    }
+  }
+  
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.timeline__item { 
+  //padding: 1rem;
+  //position: relative;
+  //margin: 20px 160px 20px auto;
+  //clear: both;
+  //max-width: fit-content;
+  //text-align: right;
+  padding: 20px;
+   
+  @media screen and (min-width: 768px) {
+    padding: 1rem;
+    position: relative;
+    margin: 20px 160px 20px auto;
+    clear: both;
+    max-width: fit-content;
+    text-align: right;
+    
+  }
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+  }
+  
+}
+
+.timeline__item--year {
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1;
+    border-image: none;
+    position: relative;
+    padding-left: 50px;
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        width: 40px;  
+        height: 40px; 
+        border-radius: 50%;  
+        top: 50%;  
+        left: -20px;
+        transform: translateY(-50%);
+        background-image: url('../../public/images/profile.png');
+        background-size: cover; // or 'contain' depending on your needs
+        background-position: center;
+        background-repeat: no-repeat;
+        @media screen and (min-width: 768px) {
+          right: -35px;  
+          left: unset;
+        }
+    }
+}
+
+.slick-dots {
+  top: -50px;
+  li {
+    border-radius: 50%;
+    background-color: rgb(207, 210, 211);
+  }
+   
+}
+.slick-dots li.slick-active button::before, .slick-dots li button:before {
+  color: transparent;
+}
+ 
+.pure1 {
+
+  img {
+    max-width: 300px !important;
+    margin: 0 auto;
+  }
+}

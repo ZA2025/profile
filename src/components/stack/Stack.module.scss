@@ -1,0 +1,93 @@
+@use '@/styles/sass/_globalVariables.scss' as globalVariables;
+
+.stack {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+    //padding: 20px 20px 40px 40px;
+    margin-bottom: 20px 30px;
+    margin-bottom: 30px;
+    &Content {
+        flex-grow: 1;
+        padding: 30px;
+        order: 2;
+        @media (min-width: map-get(globalVariables.$breakPoints, "tablet")) {
+            order: unset;
+            padding: 20px 20px 40px 40px;
+            border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+        }
+        svg {
+            width: 20px;
+        }
+    }
+
+    &Image {
+        border-left: solid 1px rgba(160, 160, 160, 0.3);
+        order: 1;
+        padding: 30px;
+        border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+        @media (min-width: map-get(globalVariables.$breakPoints, "tablet")) {
+            padding: 3.75em 3em 1.75em 3em;
+            min-width: 10em;
+            text-align: right;
+            width: 10em;
+            order: unset;
+        }
+        img {
+            display: block;
+            border-radius: 100%;
+            display: block;
+            width: 100%;
+            width: 4em;
+            margin: 0 auto;
+            @media (min-width: map-get(globalVariables.$breakPoints, "tablet")) {
+                width: 4em;
+            }
+        }
+    }
+    
+    &Card {
+        //border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+        display: flex;
+        flex-direction: column;
+        @media (min-width: map-get(globalVariables.$breakPoints, "tablet")) {
+            flex-direction: row;
+            //padding-bottom: 70px;
+            margin-bottom: 70px;
+        }
+    }
+     
+    &Title {
+        font-family: Raleway, Helvetica, sans-serif;
+        font-weight: 800;
+        letter-spacing: .25em;
+        line-height: 1.65;
+        margin: 1em 0;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;  
+        gap: 10px;  
+        flex-wrap: wrap;  
+    }
+
+    li {
+        border: 1px solid gray;
+        max-width: fit-content;
+        padding: 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        &:hover {
+            padding: 10px 20px;
+            background-color: #f0f0f0; 
+            transform: scale(1.05);
+        }
+    }
+}

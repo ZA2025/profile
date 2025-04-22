@@ -1,0 +1,152 @@
+[
+    {
+      "id": 1,
+      "name": "Tesco fpr Business",
+      "image": "/images/tesco.png",
+      "image2": [
+        "/images/tesco2.png",
+        "/images/tesco3.png",
+        "/images/tesco4.png",
+        "/images/tesco5.png"
+    ],
+      "description": "Tesco Gift Cards for Business — Give Your Clients, Customers or Colleagues Something Special with a Tesco Gift Card",
+      "date": "September 20, 2020",
+      "liveLink": "https://www.tescoforbusiness.com/",
+      "className": "tesco",
+      "stack": [
+        "Kentico Framework",
+        "JavaScript",
+        "HTML",
+        "SCSS",
+        "Cross-browser Compatibility"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Responsive images using srcset",
+      "image": "/images/srcset.png",
+      "image2": [
+        "/images/srcset1.png"
+      ],
+      "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+      "date": "March 20, 2024",
+      "liveLink": "https://za2025.github.io/responsive-images-srcset/",
+      "stack": [
+        "JavaScript",
+        "HTML",
+        "SCSS",
+        "Version Control: Git",
+        "Image Optimization",
+        "Cross-browser Compatibility"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Byond",
+      "image": "/images/byond.png",
+      "image2": [
+        "/images/byond-slide1.png",
+        "/images/byond-slide2.png",
+        "/images/byond-slide3.png",
+        "/images/byond-slide4.png",
+        "/images/byond-slide5.png"
+    ],
+      "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+      "date": "September 20, 2020",
+      "liveLink": "https://www.byondcard.co.uk/",
+      "className": "byond",
+      "stack": [
+        "Kentico Framework",
+        "JavaScript",
+        "HTML",
+        "SCSS",
+        "Version Control: Git",
+        "Image Optimization",
+        "Cross-browser Compatibility"
+      ]
+    },
+    {
+        "id": 4,
+        "name": "Pure Card",
+        "image": "/images/pure.png",
+        "image2": [
+            "/images/pure.png",
+            "/images/pure0.png"
+        ],
+        "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+        "date": "September 20, 2020",
+        "liveLink": "https://www.purecard.com/",
+        "className": "pure",
+        "stack": [
+          "JavaScript",
+          "HTML",
+          "SCSS",
+          "Version Control: Git",
+          "Image Optimization",
+          "Cross-browser Compatibility"
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Kids Choice",
+        "image": "/images/kids.png",
+        "image2": [
+          "/images/kids.png",
+          "/images/kids1.png"
+        ],
+        "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+        "date": "October 18, 2018",
+        "liveLink": "/",
+        "className": "kidschoice",
+        "stack": [
+          "JavaScript",
+          "HTML",
+          "SCSS",
+          "Cross-browser Compatibility"
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Techscheme",
+        "image": "/images/hawkincentives.png",
+        "image2": [
+          "/images/hawkincentives.png"
+           
+        ],
+        "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+        "date": "October 17, 2018",
+        "liveLink": "https://www.bhnextrashomeandtech.co.uk/",
+        "className": "techscheme",
+        "stack": [
+          "JavaScript",
+          "HTML",
+          "SCSS",
+          "Version Control: Git",
+          "Image Optimization",
+          "Cross-browser Compatibility"
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Strawberry Farm",
+        "image": "/images/strawberry.png",
+        "image2": [
+          "/images/strawberry1.png",
+          "/images/strawberry2.png",
+          "/images/strawberry3.png"
+        ],
+        "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+        "date": "June 01, 2024",
+        "liveLink": "https://za2025.github.io/strawberries",
+        "className": "strawberry",
+        "stack": [
+        "JavaScript",
+        "HTML",
+        "SCSS",
+        "Version Control: Git",
+        "Image Optimization",
+        "Cross-browser Compatibility"
+      ]
+    }
+  ]
+  

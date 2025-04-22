@@ -1,0 +1,63 @@
+@use '@/styles/sass/_globalVariables.scss' as globalVariables;
+
+.card {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    //padding: 20px 20px 40px 20px;
+    border: solid 1px rgba(160, 160, 160, 0.3);
+    display: flex;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+    
+    &Title {
+        font-family: "Raleway", Helvetica, sans-serif;
+        font-weight: 800;
+        letter-spacing: 0.25em;
+        line-height: 1.65;
+        margin: 1em 0 1em 0;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+     
+    &Content {
+        flex-grow: 1;
+        padding: 20px 20px 40px 40px;
+        border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+        svg {
+            width: 20px;
+
+        }
+    }
+
+    &Image {
+        padding: 3.75em 3em 1.75em 3em;
+        border-left: solid 1px rgba(160, 160, 160, 0.3);
+        min-width: 10em;
+        text-align: right;
+        width: 10em;
+        border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+        display: none;
+        @media (min-width: map-get(globalVariables.$breakPoints, "tablet")) {
+            display: block;
+            
+        }
+        img {
+            border-radius: 100%;
+            display: block;
+            width: 4em;
+        }
+    }
+    &Description {
+        font-family: "Raleway", Helvetica, sans-serif;
+        font-size: 0.7em;
+        font-weight: 400;
+        letter-spacing: 0.25em;
+        line-height: 2.5;
+        margin-top: -1em;
+        text-transform: uppercase;
+        white-space: wrap;
+         
+    }
+     
+}

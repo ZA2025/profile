@@ -1,0 +1,37 @@
+@use '@/styles/sass/_link.scss' as *;
+@use '@/styles/sass/_globalVariables.scss' as globalVariables;
+
+.project {
+    &Container {
+        display: block;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        gap: 20px;
+         
+        @media (min-width: map-get(globalVariables.$breakPoints, "desktop")) {
+            display: flex;
+        }
+    }
+    &Col1 {
+        width: 100%;
+        @media (min-width: map-get(globalVariables.$breakPoints, "desktop")) {
+            width: calc(50% - 20px);
+        }
+         
+    }
+    &Col2 {
+        width: 100%;
+        height: fit-content;
+        margin-top: 30px;
+        @media (min-width: map-get(globalVariables.$breakPoints, "desktop")) {
+            width: calc(50% - 20px);
+        }
+    }
+    &Col3 {
+        flex: 1;
+    }
+    .liveLink {
+        @include base-link;
+    }
+}

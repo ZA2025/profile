@@ -1,0 +1,53 @@
+@use '@/styles/sass/_globalVariables.scss' as globalVariables;
+
+.projectSlider {
+    margin-top: 60px;
+    img {
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+}
+.singleImage {
+    margin-top: -60px;
+}
+.nextArrow,
+.prevArrow {
+    position: absolute;
+    top: -35px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10;
+    background-color: rgb(196, 193, 193);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (min-width: map-get(globalVariables.$breakPoints, "tablet")) {
+        display: none;
+        
+    }
+}
+
+.nextArrow {
+    right: 0; /* Position the next arrow on the right */
+}
+
+.prevArrow {
+    left: 0; /* Position the previous arrow on the left */
+}
+
+.arrowIcon {
+    width: 20px;
+    height: 20px;
+    color: #333;
+}
+
+.nextArrow:hover,
+.prevArrow:hover {
+    background-color: #d4d5d6; /* Change background color on hover */
+    color: white;
+}
+  
