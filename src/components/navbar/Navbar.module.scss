@@ -1,4 +1,5 @@
  
+@use "sass:map";
 @use '@/styles/sass/_globalVariables.scss' as globalVariables;
 
 .navbar {
@@ -65,7 +66,7 @@
 .dropdown.open {
     width: 100%;  
     right: 0;
-    @media (min-width: map-get(globalVariables.$breakPoints, "tablet")) {
+    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
         width: 50%;
     }
     
