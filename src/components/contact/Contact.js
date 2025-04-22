@@ -4,7 +4,7 @@ import styles from './Contact.module.scss';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-    const [status, setStatus] = useState(null); // To track success or error messages
+    const [status, setStatus] = useState(null); 
 
     // Handle input changes
     const handleChange = (e) => {
@@ -97,8 +97,8 @@ const Contact = () => {
                 </div>
 
                 <div className={styles.contactImage}>
-                    <img src="/images/myavatar.svg" alt="Profile" />
-                </div>
+                    <img src="/images/profile1.png" alt="Profile" /> 
+                </div> 
             </section>
         </div>
     );
