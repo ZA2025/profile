@@ -16,8 +16,10 @@
     }
     &Col1 {
         width: 100%;
+        padding-top: 20px;
         @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
             width: calc(50% - 20px);
+            
         }
          
     }

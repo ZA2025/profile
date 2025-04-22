@@ -4,7 +4,7 @@ import Project from '@/components/project/Project';
 import Card from '@/components/card/Card';
 import styles from '@/styles/ProjectDetails.module.scss';
 import ProjectStack from '@/components/projectStack/ProjectStack';
- 
+import { notFound } from 'next/navigation';
 
 const ProjectDetails = async ({ params: paramsPromise }) => {
     const params = await paramsPromise;  
@@ -13,6 +13,7 @@ const ProjectDetails = async ({ params: paramsPromise }) => {
     const project = projectsData.find((project) => project.id === parseInt(id));
 
     if (!project) {
+         return notFound();
         return <p>Project not found.</p>;
     }
 

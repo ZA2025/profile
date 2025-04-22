@@ -1,4 +1,6 @@
 
+@use '@/styles/sass/_link.scss' as *;
+
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +60,18 @@ a {
     padding: 40px;
 }
 
+.image404 {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.liveLink {
+  @include base-link;
+}
  
  
 $color: skyblue;

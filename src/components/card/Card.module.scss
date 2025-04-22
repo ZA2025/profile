@@ -8,8 +8,13 @@
     //padding: 20px 20px 40px 20px;
     border: solid 1px rgba(160, 160, 160, 0.3);
     display: flex;
-    padding-bottom: 70px;
+     
     margin-bottom: 40px;
+    flex-direction: column;
+    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
+        flex-direction: row;
+        padding-bottom: 70px;
+    }
     
     &Title {
         font-family: "Raleway", Helvetica, sans-serif;
@@ -25,6 +30,11 @@
         flex-grow: 1;
         padding: 20px 20px 40px 40px;
         border-bottom: solid 1px rgba(160, 160, 160, 0.3);
+        order: 2;
+        @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
+            order: unset;
+            
+        }
         svg {
             width: 20px;
 
@@ -32,21 +42,24 @@
     }
 
     &Image {
-        padding: 3.75em 3em 1.75em 3em;
+        padding: 30px; 
         border-left: solid 1px rgba(160, 160, 160, 0.3);
         min-width: 10em;
         text-align: right;
-        width: 10em;
+        width: 100%;
         border-bottom: solid 1px rgba(160, 160, 160, 0.3);
-        display: none;
+        order: 1;
         @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
-            display: block;
+            padding: 3.75em 3em 1.75em 3em;
+            width: 10em;
+            order: unset;
             
         }
         img {
             border-radius: 100%;
             display: block;
             width: 4em;
+            margin: 0 auto;
         }
     }
     &Description {
