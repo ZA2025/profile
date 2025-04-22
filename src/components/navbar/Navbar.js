@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './Navbar.module.scss';
+import Link from 'next/link';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
             </div>
              
             <ul className={`${styles.dropdown} ${isMenuOpen ? styles.open : ''}`}>
-                <li><a href="/">Home</a></li>
+                <li><Link href="/">Home</Link></li>
             </ul>
         </nav>
     );

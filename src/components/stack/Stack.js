@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Stack.module.scss';
 
 const Stack = () => {
