@@ -10,6 +10,10 @@ const Navbar = () => {
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+    
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
 
     return (
         <nav className={styles.navbar}>
@@ -25,7 +29,7 @@ const Navbar = () => {
             </div>
              
             <ul className={`${styles.dropdown} ${isMenuOpen ? styles.open : ''}`}>
-                <li><Link href="/">Home</Link></li>
+                <li><Link href="/" onClick={closeMenu}>Home</Link></li>
             </ul>
         </nav>
     );
