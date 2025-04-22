@@ -8,7 +8,7 @@ const Card = ({ title, description, image }) => {
                 <p className={styles.cardDescription}>{description}</p>
             </div>
             <div className={styles.cardImage}>
-                <img src="/images/myavatar.svg" alt="Profile" />
+                <img src="/images/profile1.png" alt="Profile" />
             </div>
         </div>
     );
