@@ -1,4 +1,5 @@
 import styles from './Card.module.scss';
+import Image from 'next/image';
 
 const Card = ({ title, description, image }) => {
     return (
@@ -8,7 +9,14 @@ const Card = ({ title, description, image }) => {
                 <p className={styles.cardDescription}>{description}</p>
             </div>
             <div className={styles.cardImage}>
-                <img src="/images/profile1.png" alt="Profile" />
+                
+                <Image
+                    src="/images/profile1.png"
+                    alt="profile Image"
+                    width="64"
+                    height="61"
+                    className={styles.cardImageResponsive}
+                />
             </div>
         </div>
     );

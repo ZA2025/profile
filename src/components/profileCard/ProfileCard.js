@@ -1,4 +1,5 @@
 import styles from './ProfileCard.module.scss';
+import Image from 'next/image';
 
 const ProfileCard = () => {
     return (
@@ -10,7 +11,13 @@ const ProfileCard = () => {
                 </p>
             </div>
             <div className={styles.cardImage}>
-                <img src="/images/profile1.png" alt="Profile" />
+            <Image
+                src="/images/profile1.png"
+                alt="profile Image"
+                width="64"
+                height="61"
+                className={styles.cardImageResponsive}
+            />
             </div>
         </div>
     );

@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styles from './Contact.module.scss';
+import Image from 'next/image';
 
 const Contact = () => {
     const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -97,7 +98,12 @@ const Contact = () => {
                 </div>
 
                 <div className={styles.contactImage}>
-                    <img src="/images/profile1.png" alt="Profile" /> 
+                    <Image
+                        src="/images/profile1.png"
+                        alt="profile Image"
+                        width="64"
+                        height="61"
+                    />
                 </div> 
             </section>
         </div>

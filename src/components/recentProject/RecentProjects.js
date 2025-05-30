@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import projectsData from '@/data/projects.json'; // Import the JSON file
 import styles from './RecentProjects.module.scss'; // Import your CSS module
 import Link from 'next/link';
+import Image from 'next/image';
 
 // Utility function to generate img tag props
 const getResponsiveImageProps = (image, index) => {
@@ -54,7 +55,19 @@ const RecentProjects = () => {
               <div className={styles.projectImages}>
                 {project.projectsListingImage?.images?.map((image, imgIndex) => {
                   const imgProps = getResponsiveImageProps(image, imgIndex);
-                  return <img key={imgIndex} {...imgProps} />;
+                  return (
+                    <Image
+                      key={imgIndex}
+                      src={imgProps.src}
+                      srcSet={imgProps.srcSet}
+                      sizes={imgProps.sizes}
+                      alt={imgProps.alt}
+                      className={imgProps.className}
+                      width={imgProps.width}
+                      height={imgProps.height || imgProps.width} // Fallback to width if height is not defined
+                    />
+                  );
+                  
                 })}
               </div>
               <header className={styles.projectHeader}>

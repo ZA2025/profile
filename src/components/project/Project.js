@@ -5,6 +5,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
 // Utility function to generate img tag props
 const getResponsiveImageProps = (image, index) => {
@@ -67,7 +68,17 @@ const Project = ({ project }) => {
           const imgProps = getResponsiveImageProps(image, index);
           return (
             <div key={index}>
-              <img {...imgProps} loading={index === 0 ? "eager" : "lazy"}/>
+              
+              <Image 
+                src={imgProps.src}
+                alt={imgProps.alt}
+                sizes={imgProps.sizes}
+                srcSet={imgProps.srcSet}
+                width={imgProps.width}
+                height={imgProps.height || imgProps.width}
+                className={imgProps.className}
+                loading={index === 0 ? "eager" : "lazy"}
+              />
             </div>
           );
         })}

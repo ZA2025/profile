@@ -1,4 +1,5 @@
 import responsiveImgAttrs from "@/utils/responsiveImgAttrs";
+import Image from 'next/image';
 
 const ImageGallery = ({ image, alt }) => {
   if (!image) return null;

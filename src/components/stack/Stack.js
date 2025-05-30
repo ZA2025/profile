@@ -25,7 +25,13 @@ const Stack = () => {
                     </ul>
                 </div>
                 <div className={styles.stackImage}>
-                    <img src="/images/profile1.png" alt="Profile" />
+                <Image
+                    src="/images/profile1.png"
+                    alt="profile Image"
+                    width="64"
+                    height="61"
+                    className="profileImage"
+                />
                 </div>   
             </div>
              
