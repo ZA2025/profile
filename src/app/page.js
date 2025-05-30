@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import styles from "./page.module.scss";
 import RecentProjects from "@/components/recentProject/RecentProjects";
 import ProfileCard from "@/components/profileCard/ProfileCard";
