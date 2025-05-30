@@ -4,7 +4,7 @@ const Card = ({ title, description, image }) => {
     return (
         <div className={styles.card}>
             <div className={styles.cardContent}>
-                <h2 className={styles.cardTitle}>{title}</h2>
+                <h1 className={styles.cardTitle}>{title}</h1>
                 <p className={styles.cardDescription}>{description}</p>
             </div>
             <div className={styles.cardImage}>

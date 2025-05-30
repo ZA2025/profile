@@ -13,8 +13,7 @@ const ProjectDetails = async ({ params: paramsPromise }) => {
     const project = projectsData.find((project) => project.id === parseInt(id));
 
     if (!project) {
-         return notFound();
-        return <p>Project not found.</p>;
+        return notFound();  
     }
 
     return (

@@ -5,30 +5,29 @@
 .project {
     &Container {
         display: block;
-        justify-content: space-between;
+        //justify-content: space-between;
         position: relative;
         width: 100%;
-        gap: 20px;
+        gap: 30px;
          
         @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
             display: flex;
+            flex: 0 0 calc((100% - 30px) * 0.5);
         }
     }
     &Col1 {
         width: 100%;
         padding-top: 20px;
         @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
-            width: calc(50% - 20px);
-            
+            width: calc(50% - 15px);
         }
-         
     }
     &Col2 {
         width: 100%;
         height: fit-content;
         margin-top: 30px;
         @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
-            width: calc(50% - 20px);
+            width: calc(50% - 15px);
         }
     }
     &Col3 {

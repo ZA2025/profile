@@ -3,11 +3,82 @@
     "id": 1,
     "name": "Tesco fpr Business",
     "image": "/images/tesco.webp",
-    "image2": [
-      "/images/tesco2.webp",
-      "/images/tesco3.webp",
-      "/images/tesco4.webp",
-      "/images/tesco5.webp"
+    "projectsListingImage": {
+      "alt": "Tesco for Business",
+      "images": [
+        {
+          "src": "/images/tesco.webp",
+          "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.3), (min-width: 1280px) calc((100vw - 110px) * 0.3), calc(100vw - 80px)",
+          "dimensions": [
+            { "width": 457, "default": false },
+            { "width": 685, "default": false },
+            { "width": 768, "default": true }
+          ],
+          "autoplay": false
+        }
+      ]
+    },
+    "slider": [
+      {
+        "src": "/images/tesco2.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/tesco3.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/tesco4.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/tesco5.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/tesco6.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/tesco7.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      }
     ],
     "description": "Tesco Gift Cards for Business — Give Your Clients, Customers or Colleagues Something Special with a Tesco Gift Card",
     "date": "September 20, 2020",
@@ -25,10 +96,44 @@
     "id": 2,
     "name": "Responsive images using srcset",
     "image": "/images/srcset.webp",
-    "image2": [
-      "/images/srcset1.webp"
+    "projectsListingImage": {
+      "alt": "Tesco for Business",
+      "images": [
+        {
+          "src": "/images/srcset.webp",
+          "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.3), (min-width: 1280px) calc((100vw - 110px) * 0.3), calc(100vw - 80px)",
+          "dimensions": [
+            { "width": 457, "default": false },
+            { "width": 685, "default": false },
+            { "width": 768, "default": true }
+          ],
+          "autoplay": false
+        }
+      ]
+    },
+    "slider": [
+      {
+        "src": "/images/srcset1.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/srcset1.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      }
     ],
-    "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+    "description": "This web page demonstrates how to create responsive images using the HTML srcset attribute. It helps ensure that users on different devices (mobile, tablet, desktop) receive appropriately sized images for their screen, improving performance and user experience.",
     "date": "March 20, 2024",
     "liveLink": "https://za2025.github.io/responsive-images-srcset/",
     "stack": [
@@ -44,14 +149,74 @@
     "id": 3,
     "name": "Byond",
     "image": "/images/byond.webp",
-    "image2": [
-      "/images/byond-slide1.webp",
-      "/images/byond-slide2.webp",
-      "/images/byond-slide3.webp",
-      "/images/byond-slide4.webp",
-      "/images/byond-slide5.webp"
+    "projectsListingImage": {
+      "alt": "Byond",
+      "images": [
+        {
+          "src": "/images/byond-slide1.webp",
+          "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.3), (min-width: 1280px) calc((100vw - 110px) * 0.3), calc(100vw - 80px)",
+          "dimensions": [
+            { "width": 457, "default": false },
+            { "width": 685, "default": false },
+            { "width": 768, "default": true }
+          ],
+          "autoplay": false
+        }
+      ]
+    },
+    "slider": [
+      {
+        "src": "/images/byond-slide1.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/byond-slide2.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/byond-slide3.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/byond-slide4.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/byond-slide5.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      }
     ],
-    "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
+    "description": "I worked as part of the development team on BYOND, a prepaid card and financial wellbeing solution designed to help employees make their money go further. The platform enables users to earn cashback. My role focused on developing and refining the front-end of the website, ensuring a responsive and intuitive user experience. I collaborated closely with backend developers, contributed to the implementation of promotional features and benefit explanations, and helped maintain brand consistency throughout the site. The project emphasized usability, performance, and accessibility to support BYOND’s mission of enhancing workplace financial wellbeing.",
     "date": "September 20, 2020",
     "liveLink": "https://www.byondcard.co.uk/",
     "className": "byond",
@@ -66,79 +231,181 @@
     ]
   },
   {
-      "id": 4,
-      "name": "Pure Card",
-      "image": "/images/pure.webp",
-      "image2": [
-          "/images/pure.webp",
-          "/images/pure0.webp"
-      ],
-      "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
-      "date": "September 20, 2020",
-      "liveLink": "https://www.purecard.com/",
-      "className": "pure",
-      "stack": [
-        "JavaScript",
-        "HTML",
-        "SCSS",
-        "Version Control: Git",
-        "Image Optimization",
-        "Cross-browser Compatibility"
+    "id": 4,
+    "name": "Pure Card",
+    "image": "/images/pure.webp",
+    "projectsListingImage": {
+      "alt": "Pure Card",
+      "images": [
+        {
+          "src": "/images/pure.webp",
+          "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.3), (min-width: 1280px) calc((100vw - 110px) * 0.3), calc(100vw - 80px)",
+          "dimensions": [
+            { "width": 457, "default": false },
+            { "width": 685, "default": false },
+            { "width": 768, "default": true }
+          ],
+          "autoplay": false
+        }
       ]
+    },
+    "slider": [
+      {
+        "src": "/images/pure1.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/pure2.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      } 
+    ],
+    "description": "I contributed to the development of Purecard, a prepaid Mastercard® solution designed to enhance employee financial wellbeing by offering cashback rewards on everyday spending. In collaboration with backend developers, I focused on creating a responsive and user-friendly front-end interface.",
+    "date": "September 20, 2020",
+    "liveLink": "https://www.purecard.com/",
+    "className": "byond",
+    "stack": [
+      "Kentico Framework",
+      "JavaScript",
+      "HTML",
+      "SCSS",
+      "Version Control: Git",
+      "Image Optimization",
+      "Cross-browser Compatibility"
+    ]
   },
   {
-      "id": 5,
-      "name": "Kids Choice",
-      "image": "/images/kids.webp",
-      "image2": [
-        "/images/kids.webp",
-        "/images/kids1.webp"
-      ],
-      "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
-      "date": "October 18, 2018",
-      "liveLink": "/",
-      "className": "kidschoice",
-      "stack": [
-        "JavaScript",
-        "HTML",
-        "SCSS",
-        "Cross-browser Compatibility"
+    "id": 5,
+    "name": "Kids Choice",
+    "image": "/images/kids.webp",
+    "projectsListingImage": {
+      "alt": "Kids Choice",
+      "images": [
+        {
+          "src": "/images/kids.webp",
+          "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.3), (min-width: 1280px) calc((100vw - 110px) * 0.3), calc(100vw - 80px)",
+          "dimensions": [
+            { "width": 457, "default": false },
+            { "width": 685, "default": false },
+            { "width": 768, "default": true }
+          ],
+          "autoplay": false
+        }
       ]
+    },
+    "slider": [
+      {
+        "src": "/images/kids.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/kids1.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      } 
+    ],
+    "description": "I contributed to the development of the Kids' Choice gift card page, a product designed to offer children a flexible and exciting gifting option. The Kids' Choice gift card can be redeemed at various popular retailers and entertainment venues across the UK, including Vue Cinemas, Build-A-Bear Workshop, Go Ape, and more . My responsibilities included creating a responsive and engaging user interface that effectively communicates the versatility and benefits of the Kids' Choice gift card. ",
+    "date": "September 20, 2020",
+    "liveLink": "https://www.giftcardstore.co.uk/pages/kids-choice",
+    "className": "byond",
+    "stack": [
+      "Kentico Framework",
+      "JavaScript",
+      "HTML",
+      "SCSS",
+      "Version Control: Git",
+      "Image Optimization",
+      "Cross-browser Compatibility"
+    ]
   },
   {
-      "id": 6,
-      "name": "Techscheme",
-      "image": "/images/hawkincentives.webp",
-      "image2": [
-        "/images/hawkincentives.webp"
-      ],
-      "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
-      "date": "October 17, 2018",
-      "liveLink": "https://www.bhnextrashomeandtech.co.uk/",
-      "className": "techscheme",
-      "stack": [
-        "JavaScript",
-        "HTML",
-        "SCSS",
-        "Version Control: Git",
-        "Image Optimization",
-        "Cross-browser Compatibility"
+    "id": 6,
+    "name": "Strawberry Farm",
+    "image": "/images/strawberry.webp",
+    "projectsListingImage": {
+      "alt": "Techscheme Image",
+      "images": [
+        {
+          "src": "/images/strawberry.webp",
+          "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.3), (min-width: 1280px) calc((100vw - 110px) * 0.3), calc(100vw - 80px)",
+          "dimensions": [
+            { "width": 457, "default": false },
+            { "width": 685, "default": false },
+            { "width": 768, "default": true }
+          ],
+          "autoplay": false
+        }
       ]
-  },
-  {
-      "id": 7,
-      "name": "Strawberry Farm",
-      "image": "/images/strawberry.webp",
-      "image2": [
-        "/images/strawberry1.webp",
-        "/images/strawberry2.webp",
-        "/images/strawberry3.webp"
-      ],
-      "description": "An AI-powered portfolio generator that creates personalized portfolios based on user preferences and skills.",
-      "date": "June 01, 2024",
-      "liveLink": "https://za2025.github.io/strawberries",
-      "className": "strawberry",
-      "stack": [
+    },
+    "slider": [
+      {
+        "src": "/images/strawberry1.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/strawberry2.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/strawberry3.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/strawberry4.webp",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      } 
+    ],
+    "description": "Strawberry Farm is a fictional project that showcases the development of a responsive and visually appealing website for a strawberry farm. The site features a user-friendly interface, highlighting the farm's offerings, including fresh strawberries, farm tours, and seasonal events. The design emphasizes vibrant imagery and easy navigation to enhance the user experience.",
+    "date": "September 20, 2020",
+    "liveLink": "https://za2025.github.io/strawberries",
+    "className": "strawberry ",
+    "stack": [
       "JavaScript",
       "HTML",
       "SCSS",

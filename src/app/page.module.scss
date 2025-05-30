@@ -7,9 +7,9 @@
     height: auto;
     box-sizing: border-box;
      
-    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
+    @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
         width: 100%;
-        max-width: 24em;
+        flex: 0 0 calc((100% - 30px) * 0.3);
     }
     &Header {
         border-top: solid 1px rgba(160, 160, 160, 0.3);
@@ -31,15 +31,24 @@
 
 }
 .container {
+    position: relative;
     width: 100%;
     display: block;
-    gap: 2rem;
+    gap: 30px;
+    box-sizing: border-box;
+    
     @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
         display: flex;
     }
+    
 }
 
 .main {
     width: 100%;
     box-sizing: border-box;
+    
+    @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
+        flex: 0 0 calc((100% - 30px) * 0.7);
+        //max-width: calc((100% - 15px) * 0.7);
+    }
 }
