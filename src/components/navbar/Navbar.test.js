@@ -4,11 +4,13 @@ import Navbar from './Navbar';
 
 // Mock next/link to render a single anchor with props forwarded
 jest.mock('next/link', () => {
-  return ({ children, href, onClick, ...props }) => (
+  const Link = ({ children, href, onClick, ...props }) => (
     <a href={href} onClick={onClick} {...props}>
       {children}
     </a>
   );
+  Link.displayName = 'Link';
+  return Link;
 });
 
 describe('Navbar', () => {
