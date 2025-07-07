@@ -3,6 +3,12 @@
 @use "sass:map";
 @use '@/styles/sass/_globalVariables.scss' as globalVariables;
 
+$color: skyblue;
+$lineColor: hotpink;
+$fontColor: #bbb;
+$yearBgColor: #333;
+$breakpoint: 700px;
+
 * {
     margin: 0;
     padding: 0;
@@ -72,15 +78,12 @@ a {
 .wrapper {
     position: relative;
     width: 100%;
-    //max-width: 1480px;
     margin: 0 auto;
     padding: 40px;
     box-sizing: border-box;
-    //background-color: hotpink; 
     display: block;
     @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
       max-width: 1480px;
-      
   }
 }
 
@@ -96,14 +99,9 @@ a {
 .liveLink {
   @include base-link;
 }
- 
- 
-$color: skyblue;
-$lineColor: hotpink;
-$fontColor: #bbb;
-$yearBgColor: #333;
 
-$breakpoint: 700px;
+
+ 
 
 .timelineContainer {
     background-color: white;
@@ -143,21 +141,22 @@ $breakpoint: 700px;
     display: table;
     clear: both;
   }
+  &__title {
+    color: rgb(91, 86, 86);
+    text-transform: math-auto;
+    font-size: 14px;
+    font-style: italic;
+    
+  }
 }
 
 .timeline__item { 
-  //padding: 1rem;
-  //position: relative;
-  //margin: 20px 160px 20px auto;
-  //clear: both;
-  //max-width: fit-content;
-  //text-align: right;
-  padding: 20px;
-   
+  padding: 10px 20px;
+  
   @media screen and (min-width: 768px) {
     padding: 1rem;
     position: relative;
-    margin: 20px 160px 20px auto;
+    margin: 20px 160px 0px auto;
     clear: both;
     max-width: fit-content;
     text-align: right;
@@ -177,28 +176,31 @@ $breakpoint: 700px;
     line-height: 1;
     border-image: none;
     position: relative;
-    padding-left: 50px;
     @media screen and (min-width: 768px) {
       text-align: center;
     }
     &:before {
         content: '';
         position: absolute;
-        width: 40px;  
-        height: 40px; 
-        border-radius: 50%;  
+        width: 20px;  
+        height: 10px; 
+        border-radius: 50px;  
         top: 50%;  
-        left: -20px;
+        left: -10px;
+        right: 0;
         transform: translateY(-50%);
-        background-image: url('../../public/images/profile.png');
+        // background-image: url('../../public/images/flag.png');
         background-size: cover; // or 'contain' depending on your needs
         background-position: center;
         background-repeat: no-repeat;
+        // transform: rotate(90deg);
+        background-color: rgb(255, 190, 49);
         @media screen and (min-width: 768px) {
-          right: -35px;  
+          right: -30px;  
           left: unset;
         }
     }
+   
 }
 
 .slick-dots {
@@ -215,9 +217,45 @@ $breakpoint: 700px;
 }
  
 .pure1 {
-
   img {
     max-width: 300px !important;
     margin: 0 auto;
   }
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  width: 60%;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 40%;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 20%;
+}
+
+ 

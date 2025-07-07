@@ -1,10 +1,12 @@
 "use client";
+import React from 'react';
+
 import { useState, useEffect } from 'react';
 import projectsData from '@/data/projects.json'; // Import the JSON file
 import styles from './RecentProjects.module.scss'; // Import your CSS module
 import Link from 'next/link';
 import Image from 'next/image';
-
+import BrowserFrame from '../frame/Frame';
 // Utility function to generate img tag props
 const getResponsiveImageProps = (image, index) => {
   const srcSet = image.dimensions
@@ -56,6 +58,7 @@ const RecentProjects = () => {
                 {project.projectsListingImage?.images?.map((image, imgIndex) => {
                   const imgProps = getResponsiveImageProps(image, imgIndex);
                   return (
+                    
                     <Image
                       key={imgIndex}
                       src={imgProps.src}

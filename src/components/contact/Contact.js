@@ -1,4 +1,6 @@
 'use client';
+import React from 'react';
+
 import { useState } from 'react';
 import styles from './Contact.module.scss';
 import Image from 'next/image';
@@ -41,6 +43,7 @@ const Contact = () => {
 
     return (
         <div className={styles.contact}>
+             
             <section className={styles.contactSection}>
                 <div className={styles.contactContent}>
                     <h1 className={styles.contactTitle}>Contact Me</h1>
@@ -80,7 +83,7 @@ const Contact = () => {
                                 required
                             ></textarea>
                         </div>
-                        <button type="submit" className={styles.liveLink}>Contact Me</button>
+                        <button type="submit" className={styles.liveLink}>Send</button>
                     </form>
 
                     {/* Display success or error messages */}

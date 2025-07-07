@@ -1,4 +1,5 @@
 import styles from './Timeline.module.scss';
+import React from 'react';
 
 const Timeline = () => {
     return (

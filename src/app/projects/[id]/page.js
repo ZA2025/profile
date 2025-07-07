@@ -5,6 +5,7 @@ import Card from '@/components/card/Card';
 import styles from '@/styles/ProjectDetails.module.scss';
 import ProjectStack from '@/components/projectStack/ProjectStack';
 import { notFound } from 'next/navigation';
+import React from 'react';
 
 const ProjectDetails = async ({ params: paramsPromise }) => {
     const params = await paramsPromise;  
@@ -21,7 +22,6 @@ const ProjectDetails = async ({ params: paramsPromise }) => {
             <Card
                 title={project.name}
                 description={project.description}
-                image={project.image}
             />
             <section className={styles.project}>
                 <div className={styles.projectContainer}>
@@ -36,7 +36,6 @@ const ProjectDetails = async ({ params: paramsPromise }) => {
                     </div>
                 </div>
             </section>
-            
         </div>
     );
 };

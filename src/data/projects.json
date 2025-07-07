@@ -80,7 +80,14 @@
         "autoplay": false
       }
     ],
-    "description": "Tesco Gift Cards for Business — Give Your Clients, Customers or Colleagues Something Special with a Tesco Gift Card",
+    "description": "A responsive web platform that allows businesses to purchase Tesco Gift Cards as rewards or gifts for clients, customers, and colleagues.",
+    "description2": [
+      "Developed using Kentico CMS, JavaScript, HTML5, and SCSS.",
+      "Translated detailed design mockups into pixel-perfect, accessible, and responsive web pages.",
+      "Collaborated with designers and back-end teams to ensure smooth integration and an intuitive user experience.",
+      "Ensured cross-browser compatibility and optimized for performance across devices."
+       
+    ],
     "date": "September 20, 2020",
     "liveLink": "https://www.tescoforbusiness.com/",
     "className": "tesco",

@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 import styles from './Stack.module.scss';
 
@@ -22,6 +23,15 @@ const Stack = () => {
                         <li className={styles.stackItem}>Responsive Web Design</li>
                         <li className={styles.stackItem}>POSTMAN</li>
                         <li className={styles.stackItem}>NODE.JS</li>
+                        <li className={styles.stackItem}>Visual Studio Code</li>
+                        <li className={styles.stackItem}>Adobe Dreamweaver</li>
+                        <li className={styles.stackItem}>Azure DevOps</li>
+                        <li className={styles.stackItem}>Image Optimization</li>
+                        <li className={styles.stackItem}>Performance Optimization</li>
+                        <li className={styles.stackItem}>Cross-Browser Compatibility</li>
+                        <li className={styles.stackItem}>SEO Best Practices</li>
+                        <li className={styles.stackItem}>Kentico (CMS)</li>
+                        <li className={styles.stackItem}>Nunjucks</li>
                     </ul>
                 </div>
                 <div className={styles.stackImage}>

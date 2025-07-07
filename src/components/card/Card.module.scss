@@ -15,6 +15,24 @@
         padding-bottom: 70px;
     }
     
+    &DescriptionList {
+        padding: 20px 0;
+        line-height: 1.5;
+        font-weight: normal;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        li {
+            border: 1px solid gray;
+            max-width: -moz-fit-content;
+            max-width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+           
+        }
+    }
     &Title {
         font-family: "Raleway", Helvetica, sans-serif;
         font-weight: 800;

@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './ProjectStack.module.scss';
 
 const ProjectStack = ({ stack }) => {

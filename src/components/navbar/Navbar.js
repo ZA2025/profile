@@ -1,4 +1,5 @@
 "use client";
+import React from 'react';
 
 import { useState } from 'react';
 import styles from './Navbar.module.scss';
@@ -18,17 +19,16 @@ const Navbar = () => {
     return (
         <nav className={styles.navbar}>
             <div className={styles.navbarLogo}>
-                <h1 className={styles.navbarTitle}>Portfolio</h1>
+                <h1 className={`${styles.navbarTitle}`}>Portfolio</h1>
             </div>
             <div className={styles.burgerMenuContainer}>
-                <div className={styles.burgerMenu} onClick={toggleMenu}>
+                <div className={styles.burgerMenu} onClick={toggleMenu} role="button">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
             </div>
-             
-            <ul className={`${styles.dropdown} ${isMenuOpen ? styles.open : ''}`}>
+            <ul role="list" className={`${styles.dropdown} ${isMenuOpen ? styles.open : ''}`}>
                 <li><Link href="/" onClick={closeMenu}>Home</Link></li>
             </ul>
         </nav>
