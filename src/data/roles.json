@@ -1,0 +1,66 @@
+[
+    {   
+        "id": "1",
+        "type": "work",
+        "title": "Front End Developer",
+        "institution": "Freelancer",
+        "year": "2025",
+        "description": "Worked on modern web apps using React and Next.js."
+    },
+    {
+        "id": "2",
+        "type": "Role",
+        "title": "Front End Developer",
+        "institution": "Netcel Dgitial Agency",
+        "year": "2021",
+        "description": "Graduated with honors."
+    },
+    {
+        "id": "3",
+        "type": "Role",
+        "title": "Front End Developer",
+        "institution": "Dotmatics",
+        "year": "2016 – 2021",
+        "description": "Graduated with honors."
+    },
+    {
+       "id": "4",
+        "type": "Role",
+        "title": "Front End Developer",
+        "institution": "BHN Network",
+        "year": "2013 - 2016",
+        "description": "Graduated with honors."
+    },
+    {
+        "id": "5",
+        "type": "Role",
+        "title": "Freelancer Web Developer",
+        "institution": "Freelancer",
+        "year": "2012 - 2013",
+        "description": "Graduated with honors."
+    },
+    {
+        "id": "6",
+        "type": "Education",
+        "title": "Master’s in Business Information Systems",
+        "institution": "University of Bedfordshire",
+        "year": "2011 - 2012",
+        "description": "Graduated with honors."
+    },
+    {
+        "id": "7",
+        "type": "Education",
+        "title": "BSc in Internet Computing (First Class)",
+        "institution": "University of Bedfordshire",
+        "year": "2009 - 2011",
+        "description": "Graduated with honors."
+    },
+    {
+        "id": "8",
+        "type": "Education",
+        "title": "Foundation degree in Software",
+        "institution": "University of Bedfordshire",
+        "year": "2009",
+        "description": "Graduated with honors."
+    }
+  ]

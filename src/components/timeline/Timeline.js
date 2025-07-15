@@ -1,13 +1,24 @@
 import styles from './Timeline.module.scss';
 import React from 'react';
+import roles from '@/data/roles.json';
 
 const Timeline = () => {
     return (
         <div className='timelineContainer'>
             <div className="timeline">
                 <h2 className="timelineTitle">Experience + Education</h2>
+                {roles.map((role, index) => (
+                    <div key={index}> 
+                    <div className="timeline__item">
+                        <h3 className="timeline__title">{role.title}</h3>
+                         
+                        <p>{role.institution}</p>
+                    </div>
+                    <h2 className="timeline__item timeline__item--year">{role.year}</h2>
+                </div>
+                ))}
 
-                <div className="timeline__item">
+                {/* <div className="timeline__item">
                     <h3 className="timeline__title">Freelancer - Front end developer</h3>
                 </div>
                 <h2 className="timeline__item timeline__item--year">2024</h2>
@@ -43,7 +54,7 @@ const Timeline = () => {
                 <div className="timeline__item">
                     <h3 className="timeline__title">University of Bedfordshire - Foundation degree in Software Development</h3>
                 </div>
-                <h2 className="timeline__item timeline__item--year">Start - 2009</h2>
+                <h2 className="timeline__item timeline__item--year">Start - 2009</h2> */}
             </div>
         </div>
     );
