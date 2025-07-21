@@ -78,15 +78,36 @@
     }
 
     li {
+        position: relative;
         border: 1px solid gray;
         max-width: fit-content;
         padding: 10px;
         border-radius: 10px;
         transition: all 0.3s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 90%;
+            height: 3px;
+            margin-left: 5%;
+            background-color: rgb(255, 190, 49);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
         &:hover {
             padding: 10px 20px;
             background-color: #f0f0f0; 
-            transform: scale(1.05);
+            // transform: scale(1.05);
+            &::after {
+                transform: scaleX(1);
+            }
+            
         }
+        
     }
 }

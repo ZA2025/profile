@@ -1,0 +1,42 @@
+@use '@/styles/sass/_link.scss' as *;
+@use "sass:map";
+@use '@/styles/sass/_globalVariables.scss' as globalVariables;
+
+.video {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 30px;
+    @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
+      max-width: 1400px;
+  }
+  &Col1 {
+    width: 50%;
+     
+  }
+  &Col2 {
+    width: 50%;
+    padding: 40px;
+  }
+  &Title {
+    font-size: 5rem;
+    font-family: 'Archivo Black', 'Archivo Black Fallback';
+    line-height: 1;
+    white-space: wrap;
+  }
+  &Container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-width: fit-content;
+    video {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: cover; // Ensures no weird stretching
+        border-radius: 12px;
+      }
+  }
+}

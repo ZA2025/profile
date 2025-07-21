@@ -7,12 +7,15 @@ import Timeline from "@/components/timeline/Timeline";
 import Stack from "@/components/stack/Stack";
 import Contact from "@/components/contact/Contact";
 import VerticalCarousel from "@/components/verticalCarousel/VerticalCarousel";
+ 
+
 export default function Home() {
   return (
     <div className="wrapper">
       <main className={styles.container}>
         
         <section className={styles.main}>
+           
           <ProfileCard />
           <Stack />
           <Contact />
