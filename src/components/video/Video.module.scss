@@ -7,15 +7,16 @@
     width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-     
     margin-top: 70px;
-    margin-bottom: 50px;
     @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
       display: flex;
       max-width: 1400px;
+      margin-bottom: 50px;
     }
   &Col1 {
     width: 100%;
+    padding: 0 30px;
+    
     @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
         width: 50%;
         padding: 100px 50px;
