@@ -8,7 +8,7 @@
     margin: 0 auto;
     box-sizing: border-box;
     margin-top: 70px;
-    @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
+    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
       display: flex;
       max-width: 1400px;
       margin-bottom: 50px;
@@ -17,14 +17,14 @@
     width: 100%;
     padding: 0 30px;
     
-    @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
+    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
         width: 50%;
         padding: 100px 50px;
     }
   }
   &Col2 {
     width: 100%;
-    @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
+    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
         width: 50%;
     }
   }
@@ -34,7 +34,13 @@
     font-family: 'Archivo Black', 'Archivo Black Fallback';
     line-height: 1.5;
     white-space: wrap;
+
     @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
+        font-size: 3rem;
+        line-height: 1;
+        text-align: left;
+    }
+    @media (min-width: map.get(globalVariables.$breakPoints, "largeDesktop")) {
         font-size: 5rem;
         line-height: 1;
         text-align: left;
@@ -47,7 +53,7 @@
     justify-content: center;
     max-width: fit-content;
     padding: 30px 0 0 0;
-    @media (min-width: map.get(globalVariables.$breakPoints, "desktop")) {
+    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
         width: 100%;
         padding: 0;
     }
