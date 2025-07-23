@@ -7,13 +7,17 @@ const Video = () => {
         <>
         <div className={styles.video}>
             <section className={styles.videoCol1}>
-                <h1 className={styles.videoTitle}>Welcome to my profile</h1>
+                <h1 className={styles.videoTitle}>
+                    <span className={styles.word}>Welcome</span> 
+                    <span className={styles.word}>to my</span>
+                    <span className={styles.word}>profile</span>
+                </h1>
             </section>
             <section className={styles.videoCol2}>
                  
                 <div className={styles.videoContainer}>
                     <video
-                        src="/videos/uilab.mp4" // Place video in public/videos/
+                        src="/videos/profile2.mp4" // Place video in public/videos/
                         autoPlay
                         muted
                         loop
