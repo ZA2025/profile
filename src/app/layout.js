@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../styles/globals.scss";
 import Navbar from "@/components/navbar/Navbar";
-import Video from '@/components/video/video';
 
 import { Roboto, Raleway, Open_Sans, Archivo_Black } from 'next/font/google';
 
@@ -31,7 +30,7 @@ export default function RootLayout({ children }) {
        
       <body className={`${roboto.className} ${raleway.className} ${openSans.className} ${archivoBlack.className}`}>
         <Navbar />
-        <Video />
+         
         {children}
       </body>
     </html>
