@@ -36,7 +36,7 @@ const Video = () => {
                 <div className={styles.videoContainer}>
                     <video
                         // src="/videos/profile2.mp4" // Place video in public/videos/
-                        src={theme === "dark" ? "/videos/dark.mp4" : "/videos/profile2.mp4"}
+                        src={theme === "dark" ? "/videos/dark1.mp4" : "/videos/profile2.mp4"}
                         autoPlay
                         muted
                         loop
