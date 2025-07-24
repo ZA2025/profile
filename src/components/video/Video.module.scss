@@ -3,16 +3,22 @@
 @use '@/styles/sass/_globalVariables.scss' as globalVariables;
 
 .video {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    margin-top: 70px;
-    @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
-      display: flex;
-      max-width: 1400px;
-      margin-bottom: 50px;
-    }
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-top: 70px;
+  padding: 0;
+  @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
+    display: flex;
+    padding: 0 40px; 
+    margin-bottom: 50px;
+    // padding: 0 40px;
+  }
+  @media (min-width: map.get(globalVariables.$breakPoints, "largeDesktop")) {
+    padding: 0;
+    // background-color: red;
+  }
   &Col1 {
     width: 100%;
     padding: 0 30px;
@@ -29,17 +35,19 @@
     }
   }
   &Title {
-    text-align: center;
-    font-size: 2rem;
+    text-align: left;
+    font-size: 1rem;
     font-family: 'Archivo Black', 'Archivo Black Fallback';
     line-height: 1.5;
-    letter-spacing: normal;
-    white-space: wrap;
+    display: none;
+    // letter-spacing: normal;
+    // white-space: wrap;
     @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
-        font-size: 3rem;
-        line-height: 1;
-        text-align: left;
-        letter-spacing: 1px;
+      display: block;
+      font-size: 3rem;
+      line-height: 1;
+      text-align: left;
+      letter-spacing: 1px;
          
     }
     @media (min-width: map.get(globalVariables.$breakPoints, "largeDesktop")) {
@@ -47,14 +55,15 @@
         line-height: 1;
         text-align: left;
     }
+     
   }
   &Container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     max-width: fit-content;
-    padding: 30px 0 30px 0;
+    padding: 0 0 30px 0;
     @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
         width: 100%;
         padding: 0;
@@ -69,5 +78,10 @@
   }
   .word {
     display: block;
+
+    @media (min-width: map.get(globalVariables.$breakPoints, "tablet"))  {
+      display: block;
+    }
+     
   }
 }

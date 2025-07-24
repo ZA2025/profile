@@ -59,6 +59,21 @@ const Project = ({ project }) => {
     autoplay: false,
     touchMove: true,
     swipe: true,
+    responsive: [
+      {
+        breakpoint: 768,   // below 768px width (mobile/tablet)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,     // maybe you want to hide dots on mobile?
+          arrows: false,   // hide arrows on mobile if you want
+          autoplay: true,  // autoplay on mobile, for example
+          swipe: true,
+          touchMove: true,
+        },
+      },
+      // You can add more breakpoints here if needed
+    ],
   };
 
   return (

@@ -2,6 +2,7 @@
 @use '@/styles/sass/_globalVariables.scss' as globalVariables;
 
 .card {
+    margin-top: 40px;
     position: relative;
     width: 100%;
     background-color: white;

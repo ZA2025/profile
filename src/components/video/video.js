@@ -7,11 +7,11 @@ const Video = () => {
         <>
         <div className={styles.video}>
             <section className={styles.videoCol1}>
-                <h1 className={styles.videoTitle}>
+                <h2 className={styles.videoTitle}>
                     <span className={styles.word}>Welcome</span> 
                     <span className={styles.word}>to my</span>
                     <span className={styles.word}>profile</span>
-                </h1>
+                </h2>
             </section>
             <section className={styles.videoCol2}>
                  
