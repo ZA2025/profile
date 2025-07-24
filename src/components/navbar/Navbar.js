@@ -4,6 +4,7 @@ import React from 'react';
 import { useState } from 'react';
 import styles from './Navbar.module.scss';
 import Link from 'next/link';
+import ThemeToggle from '../themeToggle/ThemeToggle.js';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +18,7 @@ const Navbar = () => {
     };
 
     return (
+        <>
         <nav className={styles.navbar}>
             <div className={styles.navbarLogo}>
                 <h1 className={`${styles.navbarTitle}`}>Portfolio</h1>
@@ -32,6 +34,10 @@ const Navbar = () => {
                 <li><Link href="/" onClick={closeMenu}>Home</Link></li>
             </ul>
         </nav>
+        <div className={styles.theme}>
+            <ThemeToggle />
+        </div>
+        </>
     );
 };
 

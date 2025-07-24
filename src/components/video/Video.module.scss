@@ -40,8 +40,7 @@
     font-family: 'Archivo Black', 'Archivo Black Fallback';
     line-height: 1.5;
     display: none;
-    // letter-spacing: normal;
-    // white-space: wrap;
+    color: var(--card-text);
     @media (min-width: map.get(globalVariables.$breakPoints, "tablet")) {
       display: block;
       font-size: 3rem;

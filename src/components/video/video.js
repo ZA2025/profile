@@ -1,8 +1,26 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import styles from './Video.module.scss'
+import { useEffect, useState } from "react";
 
 const Video = () => {
+    const [theme, setTheme] = useState("light");
+    useEffect(() => {
+        const html = document.documentElement;
+    
+        // Initial theme
+        setTheme(html.classList.contains("dark") ? "dark" : "light");
+    
+        // Watch for class changes
+        const observer = new MutationObserver(() => {
+          setTheme(html.classList.contains("dark") ? "dark" : "light");
+        });
+    
+        observer.observe(html, { attributes: true, attributeFilter: ["class"] });
+    
+        return () => observer.disconnect();
+      }, []);
     return (
         <>
         <div className={styles.video}>
@@ -17,11 +35,13 @@ const Video = () => {
                  
                 <div className={styles.videoContainer}>
                     <video
-                        src="/videos/profile2.mp4" // Place video in public/videos/
+                        // src="/videos/profile2.mp4" // Place video in public/videos/
+                        src={theme === "dark" ? "/videos/dark.mp4" : "/videos/profile2.mp4"}
                         autoPlay
                         muted
                         loop
                         playsInline
+                        key={theme}
                     />
                 </div>
             </section>
