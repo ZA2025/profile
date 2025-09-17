@@ -21,8 +21,6 @@ const slides = [
 
 export default function AppleStyleSlider() {
  
-
-
   return (
     <>
       <Swiper
