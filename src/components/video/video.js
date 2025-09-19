@@ -26,11 +26,13 @@ const Video = () => {
         <div className={styles.video}>
             <section className={styles.videoCol1}>
                 <h2 className={styles.videoTitle}>
-                    <p>uilab.co.uk</p>
+                     
                     <span className={styles.word}>Welcome to my website</span> 
                     <span className={styles.word}>to my</span>
                     <span className={styles.word}>profile</span>
+
                 </h2>
+                <h3>https://uilab.co.uk</h3>
             </section>
             <section className={styles.videoCol2}>
                  
