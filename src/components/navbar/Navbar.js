@@ -21,7 +21,7 @@ const Navbar = () => {
         <>
         <nav className={styles.navbar}>
             <div className={styles.navbarLogo}>
-                <h1 className={`${styles.navbarTitle}`}>Portfolio - https://uilab.co.uk</h1>
+                <h1 className={`${styles.navbarTitle}`}>Portfolio</h1>
             </div>
             <div className={styles.burgerMenuContainer}>
                 <div className={styles.burgerMenu} onClick={toggleMenu} role="button">
