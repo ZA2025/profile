@@ -101,6 +101,84 @@
   },
   {
     "id": 2,
+    "name": "Auto Galerie Template",
+    "image": "/images/Galerie.png",
+    "projectsListingImage": {
+      "alt": "Tesco for Business",
+      "images": [
+        {
+          "src": "/images/Galerie.png",
+          "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.3), (min-width: 1280px) calc((100vw - 110px) * 0.3), calc(100vw - 80px)",
+          "dimensions": [
+            { "width": 457, "default": false },
+            { "width": 685, "default": false },
+            { "width": 768, "default": true }
+          ],
+          "autoplay": false
+        }
+      ]
+    },
+    "slider": [
+      {
+        "src": "/images/Galerie-home.png",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      },
+      {
+        "src": "/images/Galerie.png",
+        "sizes": "(min-width: 1480px) calc((100vw - 110px) * 0.5), (min-width: 1280px) calc((100vw - 110px) * 0.5), calc(100vw - 80px)",
+        "dimensions": [
+          { "width": 457, "default": false },
+          { "width": 685, "default": false },
+          { "width": 768, "default": true }
+        ],
+        "autoplay": false
+      }
+    ],
+    "description": "A responsive web platform that allows businesses to purchase Tesco Gift Cards as rewards or gifts for clients, customers, and colleagues.",
+    "description2": [
+      "Developed using Kentico CMS, JavaScript, HTML5, and SCSS.",
+      "Translated detailed design mockups into pixel-perfect, accessible, and responsive web pages.",
+      "Collaborated with designers and back-end teams to ensure smooth integration and an intuitive user experience.",
+      "Ensured cross-browser compatibility and optimized for performance across devices."
+       
+    ],
+    "date": "September 20, 2020",
+    "liveLink": "",
+    "className": "galerie",
+    "stack": [
+      "Next.js 13+ (App Router)",
+      "React 18+",
+      "JavaScript (ES6+)",
+      "HTML",
+      "SCSS/Sass (with CSS Modules)",
+      "CSS Modules",
+      "Responsive Design",
+      "Cross-browser Compatibility",
+
+      "Swiper.js",
+      "Next.js Image",
+      "Next.js Link",
+
+      "Resend",
+
+      "Jest",
+      "ESLint",
+      "Babel",
+
+      "Vercel",
+
+      "JSON files (for project data)",
+      "Static data (no database)"
+    ]
+  },
+  {
+    "id": 7,
     "name": "Responsive images using srcset",
     "image": "/images/srcset.webp",
     "projectsListingImage": {
